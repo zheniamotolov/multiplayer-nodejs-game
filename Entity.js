@@ -8,6 +8,10 @@ module.exports = class Entity {
 
     }
 
+    getDistance(point) {
+        return Math.sqrt(Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2));
+    }
+
     update() {
         this.updatePosition();
     }

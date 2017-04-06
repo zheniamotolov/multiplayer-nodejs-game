@@ -1,4 +1,6 @@
 var Entity = require('./Entity');
+var Bullet = require('./Bullet');
+//var playerList = require('./playerList');
 module.exports = class Player extends Entity {
     constructor(id) {
         super();
@@ -10,12 +12,25 @@ module.exports = class Player extends Entity {
         this.pressingLeft = false;
         this.pressingUp = false;
         this.pressingDown = false;
+        this.pressingAttack=false;
+        this.mouseAngle=0;
         this.maxSpeed = 10;
+    }
+
+    shootBullet(angle) {
+        let bullet = new Bullet(this.id,angle);
+        bullet.x = this.x;
+        bullet.y = this.y;
+        Bullet.list[bullet.id] = bullet;
     }
 
     update() {
         this.updateSpeed();
         super.update();
+        if (this.pressingAttack ) {
+
+            this.shootBullet(this.mouseAngle)
+        }
     }
 
     updateSpeed() {
