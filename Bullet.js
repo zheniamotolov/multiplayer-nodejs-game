@@ -1,5 +1,5 @@
 let Entity = require('./Entity');
-let Player = require('./Player')
+let Player = require('./Player');
 module.exports = class Bullet extends Entity {
     constructor( parent,angle) {
         super();

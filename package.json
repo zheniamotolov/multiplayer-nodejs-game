@@ -4,13 +4,20 @@
   "description": "simple game",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "E.M",
   "license": "ISC",
+
   "devDependencies": {
-    "babel-cli": "^6.24.0",
     "express": "^4.15.2",
     "socket.io": "^1.7.3"
+  },
+"engines": {
+  "node":"7.7.4"
+},
+
+  "dependencies": {
+    "mongojs": "^2.4.0"
   }
 }

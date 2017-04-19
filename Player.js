@@ -12,22 +12,33 @@ module.exports = class Player extends Entity {
         this.pressingLeft = false;
         this.pressingUp = false;
         this.pressingDown = false;
-        this.pressingAttack=false;
-        this.mouseAngle=0;
+        this.pressingAttack = false;
+        this.mouseAngle = 0;
         this.maxSpeed = 10;
     }
 
     shootBullet(angle) {
-        let bullet = new Bullet(this.id,angle);
+        let bullet = new Bullet(this.id, angle);
+
         bullet.x = this.x;
         bullet.y = this.y;
         Bullet.list[bullet.id] = bullet;
+        //initPack.bullet.push()
+    }
+
+    getInitializeBullet() {
+        return {
+            id: this.id,
+            x: this.x,
+            y: this.y
+
+        }
     }
 
     update() {
         this.updateSpeed();
         super.update();
-        if (this.pressingAttack ) {
+        if (this.pressingAttack) {
 
             this.shootBullet(this.mouseAngle)
         }
