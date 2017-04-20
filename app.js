@@ -1,5 +1,5 @@
 var mongojs = require("mongojs");//localhost:27017/myGame
-var db = mongojs('mongodb://<root>:<root>@ds111851.mlab.com:11851/mygame', ['account','progress']);
+var db = mongojs('mongodb://root:root@ds111851.mlab.com:11851/mygame', ['account','progress']);
 
 var express = require('express');
 var app = express();
