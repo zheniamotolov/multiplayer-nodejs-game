@@ -18,7 +18,7 @@ serv.listen(process.env.PORT || 2000);
 console.log("Server started.");
 
 //require('./Entity');
-require('./client/Inventory ');
+require('./client/Inventory');
 require('./Entity');
 var SOCKET_LIST = {};
 
