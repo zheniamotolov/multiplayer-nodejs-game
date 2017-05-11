@@ -1,4 +1,4 @@
-let Entity = require('./Entity');
+let Entity = require('./EntityClass');
 let Player = require('./Player');
 module.exports = class Bullet extends Entity {
     constructor( parent,angle) {
@@ -14,7 +14,8 @@ module.exports = class Bullet extends Entity {
     }
 
     update() {
-        if (this.timer++ > 100) {
+        if (this.timer++ > 100
+        ) {
             this.toRemove = true;
             // console.log('he')
         }
@@ -22,7 +23,7 @@ module.exports = class Bullet extends Entity {
         super.update();
         for (var i in Player.list) {
             // var p=Player.list[i];
-            if (super.getDistance(Player.list[i]) < 32 && this.parent !== Player.list[i].id) {
+            if (super.getDistance(Player.list[i]) < 20 && this.parent !== Player.list[i].id) {
 
                 this.toRemove = true;
             }

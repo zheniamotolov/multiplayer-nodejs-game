@@ -1,0 +1,65 @@
+#wrapper {
+    margin: 0px auto;
+    width: 1200px;
+}
+
+#gameDiv {
+    display: none;
+}
+
+#game {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    background-image: url('../img/map.png');
+}
+
+#ctx {
+    position: absolute;
+
+
+}
+
+#ctx-ui {
+
+    position: absolute;
+
+}
+
+#ui {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+}
+
+#ui button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#ctx {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#belowGame {
+    margin-top: 500px;
+    user-select: none;
+}
+
+#chat-text {
+    border-left: 1px solid darkgrey;
+    border-right: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    width: 1200px;
+    height: 100px;
+    overflow-y: scroll;
+    user-select: none;
+}
+
+#chat-input {
+    width: 1200px;
+    user-select: none;
+}

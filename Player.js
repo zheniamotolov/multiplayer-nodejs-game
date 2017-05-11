@@ -1,4 +1,4 @@
-var Entity = require('./Entity');
+var Entity = require('./EntityClass');
 var Bullet = require('./Bullet');
 //var playerList = require('./playerList');
 module.exports = class Player extends Entity {
