@@ -507,7 +507,7 @@
       <workItem from="1494273991932" duration="3807000" />
       <workItem from="1494409508019" duration="3671000" />
       <workItem from="1494495459387" duration="338000" />
-      <workItem from="1494500851538" duration="1065000" />
+      <workItem from="1494500851538" duration="1154000" />
     </task>
     <task id="LOCAL-00001" summary="Authorisation and authenfication added">
       <created>1491501173323</created>
@@ -520,7 +520,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163650000" />
+    <option name="totallyTimeSpent" value="163739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
