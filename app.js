@@ -19,7 +19,7 @@ console.log("Server started.");
 
 //require('./Entity');
 require('./client/Inventory');
-require('./Entity');
+//require('./Entity');
 var SOCKET_LIST = {};
 
 var DEBUG = true;
@@ -338,7 +338,7 @@ Bullet = function (param) {
     self.toRemove = false;
     var super_update = self.update;
     self.update = function () {
-        if (self.timer++ > 100)
+        if (self.timer++ > 30)
             self.toRemove = true;
         super_update();
 
@@ -352,8 +352,8 @@ Bullet = function (param) {
                     if (shooter)
                         shooter.score += 1;
                     p.hp = p.hpMax;
-                    p.x = Math.random() * 1200;
-                    p.y = Math.random() * 1200;
+                    p.x = Math.random() * 600;
+                    p.y = Math.random() * 300;
                 }
                 self.toRemove = true;
             }

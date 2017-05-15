@@ -4,7 +4,7 @@
   "description": "simple game",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "E.M",
   "license": "ISC",

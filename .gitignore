@@ -2,3 +2,12 @@
 
 node_modules/
 .idea
+Bullet.js
+bulletList.js
+Entity.js
+EntityClass.js
+Player.js
+playerList.js
+SocketList.js
+client/clientBullet.js
+client/clientPlayer.js
