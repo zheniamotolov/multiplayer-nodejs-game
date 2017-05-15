@@ -4,7 +4,7 @@ var db = mongojs('mongodb://root:root@ds111851.mlab.com:11851/mygame', ['account
 var express = require('express');
 var app = express();
 var serv = require('http').Server(app);
-var profiler = require('v8-profiler');
+//var profiler = require('v8-profiler');
 var fs = require('fs');
 
 app.get('/', function (req, res) {
@@ -416,16 +416,16 @@ setInterval(function () {
 
 
 }, 1000 / 25);
-var startProfiling = function (duration) {
-    profiler.startProfiling('1', true);
-    setTimeout(function () {
-        var profile1 = profiler.stopProfiling('1');
-        profile1.export(function (error, result) {
-            fs.writeFile('profiler.cpuprofile', result);
-            profile1.delete();
-            console.log('profile saved');
-
-        })
-    }, duration)
-};
-startProfiling(10000);
+// var startProfiling = function (duration) {
+//     profiler.startProfiling('1', true);
+//     setTimeout(function () {
+//         var profile1 = profiler.stopProfiling('1');
+//         profile1.export(function (error, result) {
+//             fs.writeFile('profiler.cpuprofile', result);
+//             profile1.delete();
+//             console.log('profile saved');
+//
+//         })
+//     }, duration)
+// };
+// startProfiling(10000);

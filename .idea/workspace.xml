@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01ba8f3d-4370-4c3d-b77c-60cc5ab174b9" name="Default" comment="Authorisation and authenfication added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profiler.cpuprofile" afterPath="$PROJECT_DIR$/profiler.cpuprofile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -511,7 +510,7 @@
       <workItem from="1494500851538" duration="8232000" />
       <workItem from="1494835993957" duration="756000" />
       <workItem from="1494838346387" duration="1745000" />
-      <workItem from="1494840294456" duration="615000" />
+      <workItem from="1494840294456" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="Authorisation and authenfication added">
       <created>1491501173323</created>
@@ -524,7 +523,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173933000" />
+    <option name="totallyTimeSpent" value="174036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
