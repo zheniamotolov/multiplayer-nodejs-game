@@ -76,10 +76,10 @@ Item = function(id,name,event){
         id:id,
         name:name,
         event:event,
-    }
+    };
     Item.list[self.id] = self;
     return self;
-}
+};
 Item.list = {};
 
 Item("potion","Potion",function(player){
