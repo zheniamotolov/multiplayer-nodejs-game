@@ -1,1 +1,0 @@
-var SOCKET_LIST = {};
